@@ -1,4 +1,23 @@
 /*
+*****************************************************************
+requisite:
+apt-get -y install sqlite3 libsqlite3-dev
+
+you need a database (sql):
+$ sqlite3
+sqlite>  create table people (
+        id              integer,
+        firstname       varchar(20),
+        lastname        varchar(20),
+        phonenumber     char(10)
+);
+
+sqlite> insert into people (id, firstname, lastname, phonenumber) values (1, 'fulano', 'full', '123456789');
+sqlite> insert into people (id, firstname, lastname, phonenumber) values (2, 'ciclano', 'clien', '321654987');
+sqlite> insert into people (id, firstname, lastname, phonenumber) values(3, 'beltrano', 'mendes', '987456123');
+sqlite> .exit
+
+*****************************************************************
 
 
 				      /~\
