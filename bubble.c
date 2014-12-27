@@ -26,16 +26,15 @@
 */
 
 #include <stdio.h>
-#include <stdlib.h>
 
-void *banner(int arg);
+void banner();
 
-int main(int argc, char *argv[])
+int main()
 {
  int numbers[10],swap;
  int i,j;
 
- banner(argc);
+ banner();
 
  for(i=0;i<10;i++)
  {
@@ -65,12 +64,9 @@ int main(int argc, char *argv[])
  return 0;
 }
 
-void *banner(int arg)
+void banner()
 {
- if(arg>=2)
- {
-  puts("*******************************************");
-  puts("*************** Bubble Sort ***************");
-  puts("*******************************************");
- }
+ puts("*******************************************");
+ puts("*************** Bubble Sort ***************");
+ puts("*******************************************");
 }
